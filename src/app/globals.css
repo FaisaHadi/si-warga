@@ -1,1 +1,61 @@
 @import "tailwindcss";
+
+:root {
+  --color-background: #f6f8fb;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f5f9;
+  --color-border: #d8e0ea;
+  --color-border-strong: #b6c2d2;
+  --color-text: #142033;
+  --color-text-muted: #607089;
+  --color-primary: #1261a6;
+  --color-primary-strong: #0b4f8a;
+  --color-primary-soft: #e8f2fb;
+  --color-teal: #0f766e;
+  --color-teal-soft: #e7f7f5;
+  --color-success: #15803d;
+  --color-success-soft: #e8f7ee;
+  --color-warning: #b45309;
+  --color-warning-soft: #fff4db;
+  --color-danger: #b91c1c;
+  --color-danger-soft: #feecec;
+  --shadow-soft: 0 10px 30px rgba(20, 32, 51, 0.08);
+  --shadow-subtle: 0 1px 2px rgba(20, 32, 51, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-text);
+  background:
+    linear-gradient(180deg, rgba(232, 242, 251, 0.7) 0%, rgba(246, 248, 251, 0) 280px),
+    var(--color-background);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(18, 97, 166, 0.18);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(18, 97, 166, 0.24);
+  outline-offset: 2px;
+}
